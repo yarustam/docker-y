@@ -6,6 +6,6 @@ COPY . .
 
 RUN go mod tidy
 
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /final_main
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o /final_main1
 
-CMD ["/final_main"]
+CMD ["/final_main1"]
